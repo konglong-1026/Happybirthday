@@ -18,9 +18,12 @@
         </style>
 </head>
     <body>
-      <audio autoplay="autoplay">
-          <source src="music/love.mp3" type="audio/mp3" />
-      </audio>  
+    <audio id="bgm" src="music/love.mp3"></audio>
+    <script>
+    document.body.addEventListener('click', function() {
+        document.getElementById('bgm').play();
+    }, { once: true });
+    </script>
         <div id="main">
              <div id="wrap">
                 <div id="text">
